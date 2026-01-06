@@ -1,8 +1,6 @@
-'use client';
-
 import { useState } from 'react';
 
-export default function AnagraficaClienti() {
+function AnagraficaClienti() {
   const [clienti, setClienti] = useState([
     {
       id: 1,
@@ -65,7 +63,7 @@ export default function AnagraficaClienti() {
       [name]: value
     }));
     
-    if (errors[name]) {
+    if (errors[name]: value) {
       setErrors(prev => ({
         ...prev,
         [name]: ""
@@ -262,54 +260,4 @@ export default function AnagraficaClienti() {
             {clienti.length === 0 ? (
               <div className="text-center py-12">
                 <svg className="w-12 h-12 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                <h3 className="text-lg font-medium text-gray-900 mb-2">Nessun cliente</h3>
-                <p className="text-gray-600 mb-4">Inizia aggiungendo il tuo primo cliente</p>
-                <button
-                  onClick={handleNewClient : null}
-                  className="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  Aggiungi Cliente
-                </button>
-              </div>
-            ) : (
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-3 px-4 font-medium text-gray-700">Ragione Sociale</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-700">P.IVA</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-700">Email</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-700">Telefono</th>
-                      <th className="text-right py-3 px-4 font-medium text-gray-700">Azioni</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {clienti.map((cliente) => (
-                      <tr key={cliente.id} className="border-b border-gray-100 hover:bg-gray-50">
-                        <td className="py-3 px-4">
-                          <div className="font-medium text-gray-900">{cliente.ragioneSociale}</div>
-                        </td>
-                        <td className="py-3 px-4 text-gray-600">{cliente.partitaIva}</td>
-                        <td className="py-3 px-4 text-gray-600">{cliente.email}</td>
-                        <td className="py-3 px-4 text-gray-600">{cliente.telefono}</td>
-                        <td className="py-3 px-4 text-right">
-                          <div className="flex items-center justify-end space-x-2">
-                            <button
-                              onClick={() => handleEdit(cliente)}
-                              className="inline-flex items-center p-1.5 text-gray-400 hover:text-blue-600 transition-colors"
-                              title="Modifica"
-                            >
-                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                              </svg>
-                            </button>
-                            <button
-                              onClick={() => handleDelete(cliente.id)}
-                              className="inline-flex items-center p-1.5 text-gray-400 hover:text-red-600 transition-colors"
-                              title="Elimina"
-                            >
-                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7
-}}}))))
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014
